@@ -13,6 +13,7 @@
 		C6587D6D2C8A4C030030E585 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6587D6C2C8A4C030030E585 /* Preview Assets.xcassets */; };
 		C6587D6F2C8A4C030030E585 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6587D6E2C8A4C030030E585 /* Persistence.swift */; };
 		C6587D722C8A4C030030E585 /* RachasWidget.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C6587D702C8A4C030030E585 /* RachasWidget.xcdatamodeld */; };
+		C6587D982C8AB1CC0030E585 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6587D972C8AB1CC0030E585 /* Date+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		C6587D6C2C8A4C030030E585 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C6587D6E2C8A4C030030E585 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		C6587D712C8A4C030030E585 /* RachasWidget.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RachasWidget.xcdatamodel; sourceTree = "<group>"; };
+		C6587D972C8AB1CC0030E585 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			children = (
 				C6587D652C8A4BFB0030E585 /* RachasWidgetApp.swift */,
 				C6587D672C8A4BFB0030E585 /* CalendarView.swift */,
+				C6587D972C8AB1CC0030E585 /* Date+Extension.swift */,
 				C6587D692C8A4C030030E585 /* Assets.xcassets */,
 				C6587D6E2C8A4C030030E585 /* Persistence.swift */,
 				C6587D702C8A4C030030E585 /* RachasWidget.xcdatamodeld */,
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6587D982C8AB1CC0030E585 /* Date+Extension.swift in Sources */,
 				C6587D6F2C8A4C030030E585 /* Persistence.swift in Sources */,
 				C6587D682C8A4BFB0030E585 /* CalendarView.swift in Sources */,
 				C6587D662C8A4BFB0030E585 /* RachasWidgetApp.swift in Sources */,
