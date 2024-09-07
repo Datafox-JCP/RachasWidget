@@ -13,8 +13,14 @@ struct RachasWidgetApp: App {
 
     var body: some Scene {
         WindowGroup {
-            CalendarView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            TabView {
+                CalendarView()
+                    .tabItem { Label("Calendario", systemImage: "calendar") }
+                
+                StreakView()
+                    .tabItem { Label("Racha", systemImage: "swift") }
+            }
+            .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

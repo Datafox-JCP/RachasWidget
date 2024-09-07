@@ -20,6 +20,8 @@ struct CalendarView: View {
         ))
     private var days: FetchedResults<Day>
     
+    @State private var presentMessage = false
+    
 //    let daysOfWeek = ["D", "L", "M", "M", "J", "V", "S"]
     let daysOfWeek = Calendar.current.shortWeekdaySymbols
 
@@ -48,8 +50,24 @@ struct CalendarView: View {
                                     Circle()
                                         .foregroundStyle(.indigo.opacity(day.didExercise ? 0.4 : 0))
                                 )
+                                .onTapGesture {
+                                    if day.date!.dayInt <= Date().dayInt {
+                                        day.didExercise.toggle()
+                                        
+                                        do {
+                                            try viewContext.save()
+                                        } catch {
+                                            print("😈 Error al guardar \(error.localizedDescription)")
+                                        }
+                                    } else {
+                                        presentMessage.toggle()
+                                    }
+                                }
                         }
                     }
+                }
+                .alert("Advertencia", isPresented: $presentMessage) { } message: {
+                    Text("😾 no puedes ejercitarte anticipadamente")
                 }
                 
                 Spacer()
